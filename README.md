@@ -12,7 +12,7 @@ In this project we are showing
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$db = "node_learn";//Database Name
+$db = "node_learn";     //Database Name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db);
