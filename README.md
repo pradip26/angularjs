@@ -34,3 +34,15 @@ if ($result = mysqli_query($conn, $sql)) {
     }
 }
 
+# Request Data
+
+In this we will fetch GET Request coming from pf_ang.js
+
+
+$action = isset($_GET['action']) ? $_GET['action'] : '';
+
+
+
+
+
+
