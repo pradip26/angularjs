@@ -12,7 +12,7 @@ In this project we are showing
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$db = "node_learn";
+$db = "node_learn";//Database Name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db);
@@ -22,27 +22,15 @@ $conn = new mysqli($servername, $username, $password, $db);
 if ($conn->connect_error) {
 
     die("Connection failed: " . $conn->connect_error);
-    
 }
 
-
-$sql = "SELECT * FROM emp_data";
-
+$sql = "SELECT * FROM emp_data";//emp_data is Table Name
 
 if ($result = mysqli_query($conn, $sql)) {
 
-
-    $returns = array();
-
-
-    while ($row = mysqli_fetch_assoc($result)) {
-
-
-        $returns[] = $row;
-
-
+    $returns = array();// declare empty array 
+    while ($row = mysqli_fetch_assoc($result)) {//mysqli_fetch_assoc will fetch data 
+        $returns[] = $row;//fill data in $return
     }
-
-
 }
 
