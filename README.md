@@ -43,6 +43,21 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 
 
+# Where the request going to hit
+  whatever your request you sent from GET will go in this switch cases
+  
+
+switch ($action) {
+
+    case 'all_array':
+      some code..//
+      break 
+      
+      
+    case 'save':
+    some code ../
+
+
 
 
 
