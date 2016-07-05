@@ -73,3 +73,30 @@ This file pf_ang.js contains all events i.e click,Ajax etc
 <script type="text/javascript" src="pf_ang.js"></script>
 ``````
 
+
+# all.php file 
+
+ng-app="myapp" will instantiate angular
+
+```
+<body ng-app="myapp">    
+```
+
+ng-controller="employee_data" is the controller where all the Add,Edit and Delete will take place also Data is shown Table 
+````
+<div ng-controller="employee_data" id="all_data_main">
+````
+
+<tr ng-repeat="all_data in emp_data| filter:searchText">
+```
+emp_data contains all the data coming from Database and then assign in all_data
+
+```
+
+#filter :searchText 
+
+searchText of "tr" tag  is directly binded with ng-model="searchText" of textbox i.e whatever you type in textbox then only data will be shown in table 
+`````
+<input type="text" placeholder="search your name"  ng-model="searchText">
+`````
+
