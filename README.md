@@ -61,6 +61,7 @@ switch ($action) {
 
 # Showing data in all.php 		
 
+
 	This is the angular.js LIB file which is compulsory 
  <script type="text/javascript" src="../js/angular.js"></script> 
 
