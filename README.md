@@ -59,11 +59,17 @@ switch ($action) {
 
 
 
-# Showing data in all.php 		
+# Js Files List 		
 
 
 This is the angular.js LIB file which is compulsory 
 
-
+```
 <script type="text/javascript" src="../js/angular.js"></script> 
+```
+
+This file pf_ang.js contains all events i.e click,Ajax etc
+``````
+<script type="text/javascript" src="pf_ang.js"></script>
+``````
 
